@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- 
+        TECHNICAL AUDIT BY: DUSTY MCLEAN
+        ENTITY: MYNODE / PIXIE'S PANTRY
+        PURPOSE: SEO HARDENING & SEMANTIC MAPPING
+        VERSION: 2.1.5 (FINAL BRAND & FAQ SYNC)
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- PRIMARY SEO & AUTHORITATIVE METADATA -->
+    <title>Pixie's Pantry | Authorized Boutique Distribution & Wholesale Hub</title>
+    <meta name="description" content="Official authorized boutique distributor for Storz & Bickel, Puffco, Pax, and 60+ premium botanical hardware brands. Exclusive manufacturer-direct wholesale floor access for Mississippi, vetted by The Auditor, Dusty McLean.">
+    <meta name="keywords" content="Pixie's Pantry, MyNode, Wholesale Vapes Mississippi, Boutique Distribution, Dusty McLean, Technical Hardware Audit, Medical Devices, Dyspensr, Storz & Bickel Authorized Dealer, Puffco Wholesale, Pax Distributor, Airistech, AirVape, Boundless, DaVinci, Dr. Dabber, DynaVap, Focus V, Grenco Science, Hamilton Devices, Ispire, Lookah, MJ Arsenal, Ooze, Pulsar, RAW, Santa Cruz Shredder, Yocan, Zenco, Architectural Glass, Botanical Consumption Technology, North Mississippi Wholesale, Vaporizer Safety Audit">
+    <meta name="author" content="Dusty McLean">
+    <meta name="copyright" content="Pixie's Pantry 2026">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, snip, archive">
+    <link rel="canonical" href="https://pixies-pantry.com/">
+
+    <!-- PERFORMANCE HINTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- OPEN GRAPH / SOCIAL -->
+    <meta property="og:site_name" content="Pixie's Pantry Boutique">
+    <meta property="og:title" content="Pixie's Pantry | Authorized Boutique Distribution & Wholesale Hub">
+    <meta property="og:description" content="Elevating botanical consumption through technical hardware audits and manufacturer-direct wholesale access. Authorized distributor for premium architectural glass and medical-grade delivery systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pixies-pantry.com/">
+    <meta property="og:image" content="https://pixies-pantry.com/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pixie's Pantry | Authorized Boutique Distribution">
+    <meta name="twitter:description" content="Technical hardware audits and rock-bottom wholesale pricing for Mississippi. Manufacturer-direct authorized partner for the world's leading botanical brands.">
+    <meta name="twitter:image" content="https://pixies-pantry.com/twitter-card.jpg">
+
+    <!-- LOCAL SEO -->
+    <meta name="geo.region" content="US-MS">
+    <meta name="geo.placename" content="Mississippi">
+    <meta name="geo.position" content="33.7812;-89.8173">
+    <meta name="ICBM" content="33.7812, -89.8173">
+
+    <!-- INDUSTRY SPECIFIC -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="rating" content="adult">
+    <meta name="distribution" content="global">
+
+    <!-- 
+        STRUCTURED DATA (JSON-LD) 
+        The "Master Graph": Full 61-Brand Mapping and 30-Point FAQ Audit
+    -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://pixies-pantry.com/#organization",
+          "name": "Pixie's Pantry",
+          "url": "https://pixies-pantry.com/",
+          "logo": "https://pixies-pantry.com/logo.png",
+          "founder": {
+            "@type": "Person",
+            "name": "Dusty McLean",
+            "jobTitle": "Technologist & Hardware Auditor"
+          },
+          "brand": [
+            {"@type": "Brand", "name": "Airistech"}, {"@type": "Brand", "name": "AirVape"}, {"@type": "Brand", "name": "BIC"}, 
+            {"@type": "Brand", "name": "Blazy Susan"}, {"@type": "Brand", "name": "Boundless"}, {"@type": "Brand", "name": "Chill Steel Pipes"}, 
+            {"@type": "Brand", "name": "DaVinci"}, {"@type": "Brand", "name": "Dr. Dabber"}, {"@type": "Brand", "name": "DynaVap"}, 
+            {"@type": "Brand", "name": "Eyce"}, {"@type": "Brand", "name": "First Earth"}, {"@type": "Brand", "name": "Flower Mill"}, 
+            {"@type": "Brand", "name": "Focus V"}, {"@type": "Brand", "name": "GRAV"}, {"@type": "Brand", "name": "GraviToke"}, 
+            {"@type": "Brand", "name": "Grenco Science"}, {"@type": "Brand", "name": "Grindhouse"}, {"@type": "Brand", "name": "Hamilton Devices"}, 
+            {"@type": "Brand", "name": "Hemper"}, {"@type": "Brand", "name": "Herb Saver"}, {"@type": "Brand", "name": "Hippie Pipe"}, 
+            {"@type": "Brand", "name": "Honeybee Herb"}, {"@type": "Brand", "name": "Invincibowl"}, {"@type": "Brand", "name": "Iolite"}, 
+            {"@type": "Brand", "name": "Ispire"}, {"@type": "Brand", "name": "Jane West"}, {"@type": "Brand", "name": "Juicy Jays"}, 
+            {"@type": "Brand", "name": "K. Haring"}, {"@type": "Brand", "name": "KandyPens"}, {"@type": "Brand", "name": "Kannastor"}, 
+            {"@type": "Brand", "name": "King Palm"}, {"@type": "Brand", "name": "LA Pipes"}, {"@type": "Brand", "name": "Leafly"}, 
+            {"@type": "Brand", "name": "Lookah"}, {"@type": "Brand", "name": "Marley Natural"}, {"@type": "Brand", "name": "Micro"}, 
+            {"@type": "Brand", "name": "MJ Arsenal"}, {"@type": "Brand", "name": "Moose Labs"}, {"@type": "Brand", "name": "My Bud Vase"}, 
+            {"@type": "Brand", "name": "O.penVAPE"}, {"@type": "Brand", "name": "OCB"}, {"@type": "Brand", "name": "Ongrok"}, 
+            {"@type": "Brand", "name": "Ooze"}, {"@type": "Brand", "name": "Orange Chronic"}, {"@type": "Brand", "name": "PAX"}, 
+            {"@type": "Brand", "name": "Pink Formula"}, {"@type": "Brand", "name": "PowerHitter"}, {"@type": "Brand", "name": "Prism Pipes"}, 
+            {"@type": "Brand", "name": "Puffco"}, {"@type": "Brand", "name": "Pulsar"}, {"@type": "Brand", "name": "Randy’s"}, 
+            {"@type": "Brand", "name": "RAW"}, {"@type": "Brand", "name": "Retro Vapes"}, {"@type": "Brand", "name": "Ritual"}, 
+            {"@type": "Brand", "name": "Santa Cruz Shredder"}, {"@type": "Brand", "name": "SLX"}, {"@type": "Brand", "name": "Storz & Bickel"}, 
+            {"@type": "Brand", "name": "Stndrd"}, {"@type": "Brand", "name": "The Kind Pen"}, {"@type": "Brand", "name": "Yocan"}, 
+            {"@type": "Brand", "name": "Zenco"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://pixies-pantry.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the core mission of Pixie's Pantry?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The mission is to reclassify botanical hardware as essential medical devices. We audit every piece of equipment for build quality, heat paths, and thermal efficiency to ensure it functions as a reliable wellness delivery system."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who is Dusty McLean (The Auditor)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dusty McLean is a chronically ill technologist who vets hardware supply chains. Frustrated by the high markups and low quality in the Mississippi market, Dusty launched Pixie's Pantry to provide technical verification and manufacturer-direct pricing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Pixie's Pantry related to Dyspensr?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pixie's Pantry acts as an authorized boutique hub for Dyspensr's industrial catalog. We bridge the gap between high-end manufacturing and local access, ensuring genuine, tech-vetted hardware reaches our community without retail middle-men."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do you emphasize medical-grade hardware?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For patients, hardware isn't a toy—it's a tool. We prioritize materials like medical-grade stainless steel, Grade 2 Titanium, and isolated ceramic airpaths to ensure the user is not inhaling off-gassed plastics or solder."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does a 'Technical Hardware Audit' involve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It involves inspecting the airpath isolation, thermal efficiency, machining tolerances of threads, and the overall durability of the device. If it won't survive a month of heavy use, it doesn't enter the Pantry."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Pixie's Pantry serve the Mississippi market exclusively?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While we are a local authority and distribution node for Mississippi, our verified boutique service and online channels serve enthusiasts and professionals globally who value tech-vetted authenticity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Storz & Bickel equipment available through the Pantry?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. As the gold standard for medical-grade vaporization, Storz & Bickel is a cornerstone of our authorized catalog, provided through manufacturer-direct channels."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is isolated airpath technology important?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An isolated airpath ensures that inhaled vapor never crosses sensitive electronics or internal wiring, preventing the inhalation of heavy metals or toxic fumes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you guarantee wholesale floor pricing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By eliminating the traditional 4-tier distribution model and physical retail overhead, we pass manufacturer-direct margins directly to our members and circle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the significance of 'Architectural Glass' in your catalog?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We view glass as functional art. Brands like GRAV and Lookah produce glass with precise wall thickness and percolator engineering that we classify as architectural-grade hardware."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is 'MyNode'?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MyNode is the technical infrastructure entity behind Pixie's Pantry, handling the logic, distribution protocols, and technological auditing that powers the boutique."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the Pantry offer Puffco products?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We carry Puffco's full lineup of intelligent concentrate hardware, audited for chamber efficiency and software reliability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do you carry DynaVap?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "DynaVap represents the peak of analog thermal extraction. We audit their stainless steel and titanium builds for users who need a device that never relies on a battery."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is induction heating in consumption tech?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Induction heating (used in brands like Ispire and Dr. Dabber) uses electromagnetic fields to heat hardware, providing the most precise and even thermal distribution currently available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request a specific hardware audit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Members of our Discord room can request the Auditor to investigate specific devices. We provide honest, no-generic-praise feedback on whether a device meets the Pantry's standards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are Yocan products vetted for reliability?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. While Yocan is an entry-to-mid-tier brand, we audit their specific models to ensure they provide consistent value-to-cost ratios for the everyday user."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes Lookah glass unique?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Lookah combines industrial glassblowing with bold, aesthetic designs. We audit them for joint stability and the complexity of their filtration paths."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I access the 'Wholesale Floor'?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Direct access is provided through our member protocols in the Discord room and our Hardware Directory links, connecting you directly to manufacturer-level manifests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Zenco hardware worth the investment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zenco's 'vapor-glassware' approach is unique. We've audited it for ease of cleaning and social usability, making it a top recommendation for sophisticated home setups."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the benefit of titanium over stainless steel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Titanium (Grade 2) heats and cools significantly faster than stainless steel, allowing for more precise control over the extraction process. It's a key metric in our audits."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What role does RAW play in the Pantry?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RAW is the heritage brand for natural consumption. We carry their authorized hardware to ensure users have access to clean, unbleached, and technical smoking accessories."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you handle hardware failures?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Because we deal manufacturer-direct, we assist our circle in navigating official warranty paths, ensuring that 'authorized' means you are actually protected."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is MJ Arsenal's focus?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "MJ Arsenal focuses on miniaturization. We audit their small-rig glass for how well it preserves the terpene profile of botanical concentrates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Pax Plus or Pax Mini better for medical use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Auditor recommends the Pax Plus for its technical flexibility and precision temperature control, which is crucial for specific botanical activation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do you carry Ooze?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ooze provides high-volume, reliable batteries. We audit them for their safety features and consistent voltage output in the budget-friendly category."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the mission of the Discord room?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Discord serves as our 'Member Protocols' hub—a place for exclusive drops, technical discussions, and direct access to the Auditor for private inquiries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does 'Manufacturer-Direct' actually mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It means the hardware comes from the factory or the brand's primary warehouse directly to our distribution node, removing three layers of markup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Pantry open to local Mississippi partnerships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We act as a distribution bridge for local shops and collectives that want to elevate their hardware standards without the typical overhead."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the significance of the 2026 verification?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It represents our commitment to the current technological horizon. We audit for the latest 2026 hardware standards, not outdated inventory from five years ago."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact Dusty McLean directly?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Inquiries can be sent to admin@pixies-pantry.com or via direct message in our Discord protocols for a technical response."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- STYLES -->
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: #141414;
+            --text: #e0e0e0;
+            --text-muted: #888;
+            --accent: #d4a373; /* Gold/Champagne */
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px 20px 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        #glitter-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-trigger {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 45px;
+            height: 45px;
+            background: var(--accent);
+            color: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 101;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: var(--transition);
+        }
+        .info-trigger:hover { transform: scale(1.1); background: #fff; }
+
+        .info-modal {
+            position: fixed;
+            bottom: 85px;
+            left: 30px;
+            width: 380px;
+            max-height: 80vh;
+            background: rgba(10, 10, 10, 0.98);
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            padding: 30px;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            z-index: 100;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+            overflow-y: auto;
+            display: none;
+            animation: slideUp 0.4s ease;
+        }
+        .info-modal.active { display: block; }
+        .info-modal h4 {
+            color: var(--accent);
+            margin: 0 0 15px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+        .info-modal p { margin-bottom: 18px; color: #ccc; text-align: left; }
+        .info-modal strong { color: #fff; }
+
+        header { text-align: center; margin-bottom: 60px; }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            margin: 0;
+            background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--accent);
+            margin-top: 10px;
+            letter-spacing: 0.1em;
+        }
+
+        .hero-button {
+            background: var(--text);
+            color: var(--bg);
+            padding: 35px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+        .hero-button:hover { transform: translateY(-3px); background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+        .hero-button h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin: 0 0 5px 0; text-transform: uppercase; letter-spacing: 3px; }
+        .hero-button p { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.4em; margin: 0; opacity: 0.7; }
+
+        .section-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5em; color: var(--text-muted); margin: 50px 0 20px; text-align: center; }
+
+        .link-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            transition: var(--transition);
+        }
+        .link-card:hover { border-color: var(--accent); padding-left: 30px; background: rgba(255,255,255,0.06); }
+        .link-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.25rem; display: block; }
+        .link-desc { font-size: 0.7rem; color: var(--text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.15em; }
+
+        .id-card-scene {
+            width: 100%;
+            height: 340px;
+            perspective: 2000px;
+            margin-top: 60px;
+        }
+        .id-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .id-card.is-flipped { transform: rotateY(180deg); }
+        .id-card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border);
+            padding: 40px;
+            background: linear-gradient(145deg, #151515, #0a0a0a);
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .id-card-back {
+            transform: rotateY(180deg);
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(145deg, #0a0a0a, #151515);
+        }
+
+        .id-header { font-family: 'Playfair Display'; font-weight: 700; letter-spacing: 4px; font-size: 0.8rem; text-align: center; margin-bottom: 25px; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 15px; width: 100%; }
+        
+        .id-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0 15px;
+            width: 100%;
+        }
+        .symbol-circle {
+            width: 55px;
+            height: 55px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text);
+            background: var(--glass);
+        }
+        .symbol-circle:hover { background: var(--accent); color: #000; border-color: var(--accent); transform: scale(1.1); }
+        .symbol-circle svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+        .mission-lifestyle {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #fff;
+            font-style: italic;
+        }
+
+        .brand-reveal-container {
+            width: 100%;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.8s ease;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .brand-reveal-container.visible {
+            max-height: 1200px;
+            opacity: 1;
+        }
+        
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            gap: 12px;
+            padding: 20px 0;
+        }
+        .brand-grid span {
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 8px;
+            transition: 0.3s;
+        }
+        .brand-grid span:hover { color: var(--accent); border-color: var(--accent); background: rgba(212, 163, 115, 0.05); }
+
+        footer {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        @media (max-width: 600px) {
+            .info-modal { width: calc(100% - 60px); left: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="glitter-canvas"></canvas>
+
+    <div class="info-trigger" onclick="toggleInfo()" aria-label="Auditor Information">i</div>
+    <div class="info-modal" id="infoModal" role="dialog" aria-labelledby="modalTitle">
+        <h4 id="modalTitle">The Auditor's Narrative</h4>
+        <p>
+            <strong>First, let's talk about the mission:</strong> It's time "paraphernalia" is classified as what it actually is—a <strong>medical device</strong>. For many of us, this gear isn't just for a lifestyle; it's a delivery system for wellness, and it should be recognized with that level of respect and technical standards.
+        </p>
+        <p>
+            Who am I? I'm <strong>Dusty McLean</strong>. I'm a technologist who is chronically ill, and I do this because I care. I don't just sell things; I audit them. I spend my time digging into build quality, heat paths, and thermal efficiency so you don't have to walk into this blind. I got tired of seeing my friends in <strong>Mississippi</strong> paying massive markups for entry-level gear that breaks in a month.
+        </p>
+        <p>
+            To fix this, I reached out to <strong>Dyspensr</strong>. I didn't just ask for a catalog; I put in the hard work to build a bridge between high-end manufacturing and a local boutique hub. I spent months vetting their supply chain and their reliability to ensure that what we're offering is the real deal—manufacturer-direct.
+        </p>
+        <p>
+            By cutting out the layers of middle-men and traditional retail overhead, I've managed to bring <strong>rock-bottom wholesale pricing</strong> directly to my circle. This isn't just a business; it's a curated effort to put the best tech in the world into the hands of the people who actually need it.
+        </p>
+        <p>
+            You aren't shopping at a big-box store. You're accessing a verified distribution node. Everything here is tech-vetted, transparently priced, and human-verified. <strong>Welcome to the Pantry.</strong>
+        </p>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1 class="logo">Pixie's Pantry</h1>
+            <div class="tagline">Bespoke Distribution • Wholesale Floor Access</div>
+        </header>
+
+        <a href="https://discord.gg/pyTSf569" class="hero-button" aria-label="Join our Discord Room">
+            <h2>The Discord Room</h2>
+            <p>Member Protocols • Exclusive Drops • Updates</p>
+        </a>
+
+        <div class="section-label">Boutique Channels</div>
+        
+        <a href="https://pixies-pantry.com/" class="link-card" aria-label="Instant Fulfillment Shop">
+            <div class="link-content">
+                <span class="link-title">Instant Fulfillment</span>
+                <span class="link-desc">Standard Consumer Service</span>
+            </div>
+            <span style="color:var(--accent)" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://vapes.pixiespantryshop.com/" class="link-card" aria-label="Hardware Directory">
+            <div class="link-content">
+                <span class="link-title">Hardware Directory</span>
+                <span class="link-desc">Explore 1,000+ Industrial Items</span>
+            </div>
+            <span style="color:var(--accent)" aria-hidden="true">→</span>
+        </a>
+
+        <a href="https://shop.pixiespantryshop.com" class="link-card" aria-label="Apparel and Goods">
+            <div class="link-content">
+                <span class="link-title">Apparel & Goods</span>
+                <span class="link-desc">The Skeleton Collection</span>
+            </div>
+            <span style="color:var(--accent)" aria-hidden="true">→</span>
+        </a>
+
+        <a href="mailto:admin@pixies-pantry.com" class="link-card" style="border-bottom: none;" aria-label="Contact the Curator">
+            <div class="link-content">
+                <span class="link-title">Curator Inquiries</span>
+                <span class="link-desc">Direct Line for Private Orders</span>
+            </div>
+            <span style="color:var(--accent)" aria-hidden="true">→</span>
+        </a>
+
+        <div class="id-card-scene">
+            <div class="id-card" id="idCard" aria-label="Interactive ID Card. Click to flip.">
+                
+                <div class="id-card-face id-card-front">
+                    <div class="id-header">MYNODE BOUTIQUE ID</div>
+
+                    <div class="id-icons">
+                        <a href="https://vapes.pixiespantryshop.com/" class="symbol-circle" title="Vapes Hub" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 11c1 0 2 1 2 2s-1 2-2 2-2-1-2-2 1-2 2-2z"/><path d="M10 11V9c0-1.1.9-2 2-2s2 .9 2 2v2"/></svg>
+                        </a>
+                        <a href="https://pixies-pantry.com/" class="symbol-circle" title="Instant Shop" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7l.8 2.5 2.5.8-2.5.8-.8 2.5-.8-2.5-2.5-.8 2.5-.8z" fill="currentColor" stroke="none"/><path d="M16 14l.4 1.2 1.2.4-1.2.4-.4 1.2-.4-1.2-1.2-.4 1.2-.4z" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="symbol-circle" title="FAQ" onclick="event.stopPropagation(); toggleInfo()">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12" stroke-width="2"/><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="symbol-circle" title="Share" onclick="event.stopPropagation(); navigator.share({url: window.location.href})">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><line x1="12" y1="12" x2="16" y2="8" stroke-width="1.2"/><line x1="12" y1="12" x2="16" y2="16" stroke-width="1.2"/></svg>
+                        </a>
+                    </div>
+
+                    <div style="font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.4em; text-align: center; color: var(--accent); border-top: 1px solid var(--border); padding-top: 20px;">
+                        FLIP TO ACCESS THE LIFESTYLE MISSION
+                    </div>
+                </div>
+
+                <div class="id-card-face id-card-back">
+                    <div class="id-header">MISSION PROTOCOL</div>
+                    <div class="mission-lifestyle">
+                        "To elevate and normalize botanical consumption through sophisticated hardware, architectural glass, and cutting-edge technology. This catalog shifts the focus from 'paraphernalia' to high-end lifestyle accessories, optimizing for high-ticket sales, aesthetic cohesion, and maximum retail margins."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand-reveal-container" id="brandReveal">
+            <div style="font-size: 0.6rem; letter-spacing: 5px; color: var(--accent); margin-bottom: 10px;">AUTHORIZED PARTNERS</div>
+            <div class="brand-grid">
+                <span>Airistech</span><span>AirVape</span><span>BIC</span><span>Blazy Susan</span><span>Boundless</span><span>Chill Steel Pipes</span><span>DaVinci</span><span>Dr. Dabber</span><span>DynaVap</span><span>Eyce</span><span>First Earth</span><span>Flower Mill</span><span>Focus V</span><span>GRAV</span><span>GraviToke</span><span>Grenco Science</span><span>Grindhouse</span><span>Hamilton Devices</span><span>Hemper</span><span>Herb Saver</span><span>Hippie Pipe</span><span>Honeybee Herb</span><span>Invincibowl</span><span>Iolite</span><span>Ispire</span><span>Jane West</span><span>Juicy Jays</span><span>K. Haring</span><span>KandyPens</span><span>Kannastor</span><span>King Palm</span><span>LA Pipes</span><span>Leafly</span><span>Lookah</span><span>Marley Natural</span><span>Micro</span><span>MJ Arsenal</span><span>Moose Labs</span><span>My Bud Vase</span><span>O.penVAPE</span><span>OCB</span><span>Ongrok</span><span>Ooze</span><span>Orange Chronic</span><span>PAX</span><span>Pink Formula</span><span>PowerHitter</span><span>Prism Pipes</span><span>Puffco</span><span>Pulsar</span><span>Randy’s</span><span>RAW</span><span>Retro Vapes</span><span>Ritual</span><span>Santa Cruz Shredder</span><span>SLX</span><span>Storz & Bickel</span><span>Stndrd</span><span>The Kind Pen</span><span>Yocan</span><span>Zenco</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Verified Boutique Distributor • 2026<br>
+        <a href="https://vapes.pixiespantryshop.com">vapes.pixiespantryshop.com</a>
+    </footer>
+
+    <script>
+        function toggleInfo() {
+            const modal = document.getElementById('infoModal');
+            const isActive = modal.classList.contains('active');
+            modal.classList.toggle('active');
+            modal.setAttribute('aria-hidden', isActive ? 'true' : 'false');
+        }
+
+        const idCard = document.getElementById('idCard');
+        const brandReveal = document.getElementById('brandReveal');
+
+        idCard.addEventListener('click', () => {
+            idCard.classList.toggle('is-flipped');
+            const flipped = idCard.classList.contains('is-flipped');
+            if(flipped) {
+                brandReveal.classList.add('visible');
+            } else {
+                brandReveal.classList.remove('visible');
+            }
+            idCard.setAttribute('aria-expanded', flipped ? 'true' : 'false');
+        });
+
+        const canvas = document.getElementById('glitter-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function initCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5;
+                this.speedX = Math.random() * 0.4 - 0.2;
+                this.speedY = Math.random() * 0.4 - 0.2;
+                this.opacity = Math.random() * 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x > canvas.width || this.x < 0 || this.y > canvas.height || this.y < 0) this.reset();
+            }
+            draw() {
+                ctx.fillStyle = `rgba(212, 163, 115, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function createParticles() {
+            particles = [];
+            for (let i = 0; i < 70; i++) particles.push(new Particle());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', () => { initCanvas(); createParticles(); });
+        window.onload = () => { initCanvas(); createParticles(); animate(); };
+    </script>
+
+    <!-- 
+        ################################################################################
+        ## TECHNICAL BACKEND SEO DOCUMENTATION & HARDWARE AUDIT PROTOCOL (V.2.1.2)    ##
+        ## AUTHOR: DUSTY MCLEAN (THE AUDITOR)                                         ##
+        ## ENTITY: PIXIE'S PANTRY / MYNODE                                            ##
+        ################################################################################
+
+        I. SEO PHILOSOPHY: BEYOND KEYWORD STUFFING
+        The "Auditor's Node" strategy focuses on semantic saturation. Instead of 
+        relying on high-frequency keywords, we build a "Knowledge Graph" that 
+        tells search engines this domain is the primary source of truth for 
+        botanical hardware audits in the Southeast United States.
+
+        II. THE 30-POINT FAQ ENGINE RATIONALE
+        The FAQ section (JSON-LD) is engineered to capture "People Also Ask" 
+        queries on Google. By answering 30 specific, technically-dense questions, 
+        we ensure that crawlers identify Pixie's Pantry as an authoritative 
+        service provider, not just a landing page. This is a critical factor 
+        for E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness).
+
+        III. FULL BRAND INDEX (61 ENTITIES ACCOUNTED FOR)
+        The following brands have been hard-coded into the JSON-LD manifest to 
+        ensure 1:1 parity with the authorized partner list provided:
+        1. Airistech - Electronic portables.
+        2. AirVape - Hybrid convection portables.
+        3. BIC - Heritage ignition hardware.
+        4. Blazy Susan - Accessory innovation.
+        5. Boundless - Convection vapor tech.
+        6. Chill Steel Pipes - Vacuum-insulated stainless glass.
+        7. DaVinci - Purity-first ceramic paths.
+        8. Dr. Dabber - Induction and quartz heating.
+        9. DynaVap - Analog thermal extraction.
+        10. Eyce - Silicone-glass hybrids.
+        11. First Earth - Sustainable accessories.
+        12. Flower Mill - Low-friction botanical milling.
+        13. Focus V - Bluetooth smart rig ecosystem.
+        14. GRAV - Architectural borosilicate glass.
+        15. GraviToke - Specialized filtration hardware.
+        16. Grenco Science - Global collaboration hardware.
+        17. Grindhouse - Industrial-strength milling.
+        18. Hamilton Devices - CCELL-compatible battery tech.
+        19. Hemper - Subscription and glass innovation.
+        20. Herb Saver - Polypropylene storage/milling.
+        21. Hippie Pipe - Analog wooden extraction.
+        22. Honeybee Herb - Quartz nail specialists.
+        23. Invincibowl - Stainless steel filtration.
+        24. Iolite - Butane-powered convection.
+        25. Ispire - Induction hardware leaders.
+        26. Jane West - Sophisticated glass/metal goods.
+        27. Juicy Jays - Flavor-integrated accessories.
+        28. K. Haring - Artist-series borosilicate glass.
+        29. KandyPens - Luxury portable hardware.
+        30. Kannastor - Modular milling hardware.
+        31. King Palm - Natural leaf delivery systems.
+        32. LA Pipes - Domestic borosilicate manufacturing.
+        33. Leafly - Information/Infrastructure partner.
+        34. Lookah - High-design glass and e-hardware.
+        35. Marley Natural - Walnut and glass heritage.
+        36. Micro - Compact electronic portables.
+        37. MJ Arsenal - Terpene-preservation glass.
+        38. Moose Labs - Mouthpiece filtration hardware.
+        39. My Bud Vase - Discrete ceramic glassware.
+        40. O.penVAPE - Heritage 510-thread technology.
+        41. OCB - Ultra-thin paper/accessory tech.
+        42. Ongrok - Discrete storage and milling.
+        43. Ooze - High-volume electronic reliability.
+        44. Orange Chronic - ISO-grade cleaning solutions.
+        45. PAX - Portable extraction gold standard.
+        46. Pink Formula - Chemical-safe glass cleaners.
+        47. PowerHitter - Classic delivery mechanisms.
+        48. Prism Pipes - Modular glass systems.
+        49. Puffco - Smart concentrate technology leaders.
+        50. Pulsar - Comprehensive catalog authority.
+        51. Randy’s - Cleaning and accessory heritage.
+        52. RAW - The definitive natural brand.
+        53. Retro Vapes - Vintage-inspired e-hardware.
+        54. Ritual - Sophisticated accessory design.
+        55. Santa Cruz Shredder - Medical-grade aluminum milling.
+        56. SLX - Non-stick ceramic coating tech.
+        57. Storz & Bickel - Medical-grade global standard.
+        58. Stndrd - High-performance electronic basics.
+        59. The Kind Pen - Discrete portable e-hardware.
+        60. Yocan - Value-driven hardware authority.
+        61. Zenco - Vapor-glassware hybrid specialists.
+
+        IV. THE AUDITOR'S HARDWARE AUDIT PROTOCOL (INTERNAL MANUAL)
+        This document serves as the backend logic for all Pantry acquisitions:
+        
+        A. AIRPATH INTEGRITY: 
+           Does the device utilize a 100% isolated airpath? If there is any 
+           possibility of electronic component off-gassing into the inhalation 
+           stream, the device is flagged.
+        
+        B. THERMAL CAPACITY:
+           How long can the heat-sink maintain optimal temperature before 
+           degradation? We measure "Cold-Start" vs. "Sustained" thermal cycles.
+        
+        C. MATERIAL SCIENCE:
+           Verification of SS316, Grade 2 Titanium, and High-Borosilicate 
+           3.3 Glass. We reject low-quality soda-lime glass for high-heat 
+           applications.
+        
+        D. RETAIL MARGIN ANALYSIS:
+           Does the manufacturer-direct pricing provide a viable path for local 
+           Mississippi boutique growth? We aim for 2.5x to 3x retail multipliers.
+
+        V. CONCLUSION OF AUDIT
+        This file has been hardened for search indexing and technical authority. 
+        It is built for the 2026 technical landscape, prioritizing speed, 
+        mobile responsiveness, and semantic depth.
+
+        - Dusty McLean (The Auditor)
+        ################################################################################
+    -->
+</body>
+</html>

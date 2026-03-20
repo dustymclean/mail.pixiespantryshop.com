@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY SEO -->
+    <title>Pixie's Pantry | Authorized Boutique Distribution & Wholesale Hub</title>
+    <meta name="description" content="Exclusive access to Pixie's Pantry wholesale floor. Manufacturer-direct hardware, architectural glass, and cutting-edge technology. Built for Mississippi by Dusty McLean.">
+    <meta name="keywords" content="Pixie's Pantry, MyNode, Wholesale Vapes, Boutique Distribution, Dusty McLean, Premium Hardware, Pax, Storz & Bickel, Authorized Dealer, Mississippi Vape Wholesale">
+    <meta name="author" content="Dusty McLean">
+    <link rel="canonical" href="https://pixies-pantry.com/">
+
+    <!-- OPEN GRAPH / SOCIAL -->
+    <meta property="og:title" content="Pixie's Pantry | The Boutique Hub">
+    <meta property="og:description" content="To elevate and normalize botanical consumption through sophisticated hardware. Vetted by the Auditor.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pixies-pantry.com/">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #fdfaf6; /* Boutique Cream */
+            --card-white: #ffffff;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --accent: #d4a373; 
+            --border: #e8e8e8;
+            --transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 80px 20px 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* --- GLITTER ENGINE --- */
+        #glitter-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .main-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- INFO BUBBLE TRIGGER --- */
+        .info-trigger {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 45px;
+            height: 45px;
+            background: var(--text);
+            color: var(--bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 101;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        .info-trigger:hover { transform: scale(1.1); background: var(--accent); color: white; }
+
+        .info-modal {
+            position: fixed;
+            bottom: 85px;
+            left: 30px;
+            width: 350px;
+            max-height: 75vh;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 30px;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            z-index: 100;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            overflow-y: auto;
+            display: none;
+            animation: slideUp 0.4s ease;
+        }
+        .info-modal.active { display: block; }
+        .info-modal h4 {
+            color: var(--accent);
+            margin: 0 0 15px 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .info-modal p { margin-bottom: 15px; color: #444; }
+        .info-modal strong { color: var(--text); }
+
+        /* --- HEADER --- */
+        header { text-align: center; margin-bottom: 80px; }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: -1.5px;
+            margin: 0;
+        }
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-top: 5px;
+            letter-spacing: 0.05em;
+        }
+
+        /* --- LINKS & HERO --- */
+        .discord-hero {
+            background: var(--text);
+            color: white;
+            padding: 45px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+        .discord-hero:hover { background: #333; }
+        .discord-hero h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+        .discord-hero p { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.3em; margin: 0; opacity: 0.6; }
+
+        .section-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.4em; color: #bbb; margin: 60px 0 20px; text-align: center; }
+
+        .link-card {
+            background: transparent;
+            border-bottom: 1px solid var(--border);
+            padding: 28px 0;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .link-card:hover { padding-left: 10px; border-bottom-color: var(--accent); }
+        .link-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.35rem; }
+        .link-desc { font-size: 0.75rem; color: #999; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+        .arrow { font-weight: 300; font-size: 1.6rem; color: var(--accent); }
+
+        /* --- ORIGINAL ID CARD STYLE --- */
+        .id-card-scene {
+            width: 100%;
+            height: 320px;
+            perspective: 1500px;
+            margin-top: 80px;
+        }
+        .id-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .id-card.is-flipped { transform: rotateY(180deg); }
+        .id-card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--text);
+            padding: 40px;
+            background: var(--card-white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            border-radius: 4px;
+        }
+        .id-card-back {
+            background: var(--text);
+            color: white;
+            transform: rotateY(180deg);
+            padding: 25px;
+            overflow: hidden;
+        }
+
+        .id-header { font-family: 'Playfair Display'; font-weight: 700; letter-spacing: 4px; font-size: 0.9rem; text-align: center; margin-bottom: 25px; }
+        
+        .id-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0 15px;
+        }
+        .symbol-circle {
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--text);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--text);
+            background: transparent;
+        }
+        .symbol-circle:hover { background: var(--text); color: white; transform: scale(1.05); }
+        .symbol-circle svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+        /* --- BACK OF CARD: BRAND LIST --- */
+        .brand-container {
+            height: 100%;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+        .brand-container::-webkit-scrollbar { width: 2px; }
+        .brand-container::-webkit-scrollbar-thumb { background: var(--accent); }
+        
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        .brand-grid span {
+            font-size: 0.55rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 4px 0;
+        }
+
+        footer {
+            margin-top: 140px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #777;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        @media (max-width: 600px) {
+            .info-modal { width: calc(100% - 60px); }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="glitter-canvas"></canvas>
+
+    <!-- MISSION MODAL TRIGGER -->
+    <div class="info-trigger" onclick="toggleInfo()">i</div>
+    <div class="info-modal" id="infoModal">
+        <h4>The Auditor's Mission</h4>
+        <p>
+            To elevate and normalize botanical consumption through sophisticated hardware, architectural glass, and cutting-edge technology. This catalog shifts the focus from “paraphernalia” to high-end lifestyle accessories, optimizing for high-ticket sales, aesthetic cohesion, and maximum retail margins.
+        </p>
+        <p>
+            <strong>First, let's talk about the mission:</strong> It's time "paraphernalia" is classified as what it actually is—a <strong>medical device</strong>. For many of us, this gear isn't just for a lifestyle; it's a delivery system for wellness, and it should be recognized with that level of respect and technical standards.
+        </p>
+        <p>
+            Who am I? I'm <strong>Dusty McLean</strong>. I'm a technologist who is chronically ill, and I do this because I care. I don't just sell things; I audit them. I spend my time digging into build quality, heat paths, and thermal efficiency so you don't have to walk into this blind. I got tired of seeing my friends in <strong>Mississippi</strong> paying massive markups for entry-level gear that breaks in a month.
+        </p>
+        <p>
+            To fix this, I reached out to <strong>Dyspensr</strong>. I didn't just ask for a catalog; I put in the hard work to build a bridge between high-end manufacturing and a local boutique hub. I spent months vetting their supply chain and their reliability to ensure that what we're offering is the real deal—manufacturer-direct.
+        </p>
+        <p>
+            By cutting out the layers of middle-men and traditional retail overhead, I've managed to bring <strong>rock-bottom wholesale pricing</strong> directly to my circle. This isn't just a business; it's a curated effort to put the best tech in the world into the hands of the people who actually need it.
+        </p>
+        <p>
+            You aren't shopping at a big-box store. You're accessing a verified distribution node. Everything here is tech-vetted, transparently priced, and human-verified. <strong>Welcome to the Pantry.</strong>
+        </p>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1 class="logo">Pixie's Pantry</h1>
+            <div class="tagline">Bespoke Distribution • Wholesale Floor Access</div>
+        </header>
+
+        <a href="https://discord.gg/pyTSf569" class="discord-hero">
+            <h2>The Discord Room</h2>
+            <p>Member Protocols • Exclusive Drops • Updates</p>
+        </a>
+
+        <div class="section-label">Boutique Direct</div>
+        
+        <a href="https://pixies-pantry.com/" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Instant Fulfillment</span>
+                <span class="link-desc">Manufacturer Direct Service</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <div class="section-label">Inventory Systems</div>
+
+        <a href="https://vapes.pixiespantryshop.com/" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Hardware Directory</span>
+                <span class="link-desc">Explore 1,000+ Premium Technical Items</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="https://shop.pixiespantryshop.com" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Apparel & Goods</span>
+                <span class="link-desc">The Skeleton Collection</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="mailto:admin@pixies-pantry.com" class="link-card" style="border-bottom: none;">
+            <div class="link-content">
+                <span class="link-title">Curator Inquiries</span>
+                <span class="link-desc">Direct Line for Private Orders</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- SIGNATURE WHITE ID CARD -->
+        <div class="id-card-scene">
+            <div class="id-card" id="idCard">
+                
+                <!-- FRONT: MINIMALIST HUB KEYS -->
+                <div class="id-card-face id-card-front">
+                    <div class="id-header">MYNODE BOUTIQUE ID</div>
+
+                    <div class="id-icons">
+                        <a href="https://vapes.pixiespantryshop.com/" class="symbol-circle" title="Vapes Hub" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11c1 0 2 1 2 2s-1 2-2 2-2-1-2-2 1-2 2-2z"/><path d="M10 11V9c0-1.1.9-2 2-2s2 .9 2 2v2"/></svg>
+                        </a>
+                        <a href="https://pixies-pantry.com/" class="symbol-circle" title="Instant Shop" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7l.8 2.5 2.5.8-2.5.8-.8 2.5-.8-2.5-2.5-.8 2.5-.8z" fill="currentColor" stroke="none"/><path d="M16 14l.4 1.2 1.2.4-1.2.4-.4 1.2-.4-1.2-1.2-.4 1.2-.4z" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="symbol-circle" title="FAQ" onclick="event.stopPropagation(); toggleInfo()">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="8" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="symbol-circle" title="Share" onclick="event.stopPropagation(); navigator.share({url: window.location.href})">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><line x1="12" y1="12" x2="16" y2="8" stroke-width="1.2"/><line x1="12" y1="12" x2="16" y2="16" stroke-width="1.2"/></svg>
+                        </a>
+                    </div>
+
+                    <div style="font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.4em; text-align: center; color: #ccc; border-top: 1px solid #f9f9f9; padding-top: 20px;">
+                        CLICK TO REVEAL WHITELISTED BRANDS
+                    </div>
+                </div>
+
+                <!-- BACK: THE BRAND MANIFEST (TUCKED AWAY) -->
+                <div class="id-card-face id-card-back">
+                    <div class="brand-container">
+                        <div class="id-header" style="color:var(--accent); margin-bottom: 15px;">AUTHORIZED PARTNERS</div>
+                        <div class="brand-grid">
+                            <span>Airistech</span><span>AirVape</span><span>BIC</span><span>Blazy Susan</span><span>Boundless</span><span>Chill Steel Pipes</span><span>DaVinci</span><span>Dr. Dabber</span><span>DynaVap</span><span>Eyce</span><span>First Earth</span><span>Flower Mill</span><span>Focus V</span><span>GRAV</span><span>GraviToke</span><span>Grenco Science</span><span>Grindhouse</span><span>Hamilton Devices</span><span>Hemper</span><span>Herb Saver</span><span>Hippie Pipe</span><span>Honeybee Herb</span><span>Invincibowl</span><span>Iolite</span><span>Ispire</span><span>Jane West</span><span>Juicy Jays</span><span>K. Haring</span><span>KandyPens</span><span>Kannastor</span><span>King Palm</span><span>LA Pipes</span><span>Leafly</span><span>Lookah</span><span>Marley Natural</span><span>Micro</span><span>MJ Arsenal</span><span>Moose Labs</span><span>My Bud Vase</span><span>O.penVAPE</span><span>OCB</span><span>Ongrok</span><span>Ooze</span><span>Orange Chronic</span><span>PAX</span><span>Pink Formula</span><span>PowerHitter</span><span>Prism Pipes</span><span>Puffco</span><span>Pulsar</span><span>Randy’s</span><span>RAW</span><span>Retro Vapes</span><span>Ritual</span><span>Santa Cruz Shredder</span><span>SLX</span><span>Storz & Bickel</span><span>Stndrd</span><span>The Kind Pen</span><span>Yocan</span><span>Zenco</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Verified Boutique Distributor • 2026<br>
+        <a href="https://vapes.pixiespantryshop.com">vapes.pixiespantryshop.com</a>
+    </footer>
+
+    <script>
+        // --- INFO MODAL TOGGLE ---
+        function toggleInfo() {
+            document.getElementById('infoModal').classList.toggle('active');
+        }
+
+        // --- ID CARD FLIP ---
+        const idCard = document.getElementById('idCard');
+        idCard.addEventListener('click', () => {
+            idCard.classList.toggle('is-flipped');
+        });
+
+        // --- GLITTER ENGINE ---
+        const canvas = document.getElementById('glitter-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function initCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5;
+                this.speedX = Math.random() * 0.4 - 0.2;
+                this.speedY = Math.random() * 0.4 - 0.2;
+                this.opacity = Math.random() * 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x > canvas.width || this.x < 0 || this.y > canvas.height || this.y < 0) this.reset();
+            }
+            draw() {
+                ctx.fillStyle = `rgba(212, 163, 115, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function createParticles() {
+            particles = [];
+            for (let i = 0; i < 60; i++) particles.push(new Particle());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('resize', () => { initCanvas(); createParticles(); });
+        window.onload = () => { initCanvas(); createParticles(); animate(); };
+    </script>
+
+</body>
+</html>
