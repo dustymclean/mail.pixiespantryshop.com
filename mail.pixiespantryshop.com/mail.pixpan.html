@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixie's Pantry | Boutique Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fdfaf6; /* Curated Cream */
+            --text: #1a1a1a;
+            --accent: #d4a373; 
+            --border: #e8e8e8;
+            --white: #ffffff;
+        }
+
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 80px 20px 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Typography & Header */
+        .header { text-align: center; margin-bottom: 80px; }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: -1.5px;
+            margin: 0;
+        }
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--accent);
+            margin-top: 5px;
+            letter-spacing: 0.05em;
+        }
+
+        .container { width: 100%; max-width: 420px; }
+
+        /* VIP Access Block */
+        .discord-hero {
+            background: var(--text);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 40px;
+            border: 1px solid var(--text);
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .discord-hero:hover { background: #333; letter-spacing: 0.02em; }
+        .discord-hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .discord-hero p {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            margin: 0;
+            opacity: 0.6;
+        }
+
+        .section-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            color: #bbb;
+            margin: 60px 0 20px;
+            text-align: center;
+        }
+
+        .link-card {
+            background: transparent;
+            border-bottom: 1px solid var(--border);
+            padding: 24px 0;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+        }
+        .link-card:hover { padding-left: 10px; border-bottom-color: var(--accent); }
+        .link-title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.25rem; }
+        .link-desc { font-size: 0.7rem; color: #999; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
+
+        .boutique-promise {
+            font-size: 0.9rem;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin: 30px 0 60px;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        /* --- SIGNATURE ID CARD --- */
+        .id-card-scene {
+            width: 100%;
+            height: 260px;
+            perspective: 1500px;
+            margin-top: 80px;
+        }
+        .id-card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .id-card.is-flipped { transform: rotateY(180deg); }
+        .id-card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--text);
+            padding: 35px;
+            background: var(--white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+        .id-card-back {
+            background: var(--text);
+            color: var(--white);
+            transform: rotateY(180deg);
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* Matching Minimalist Symbols */
+        .id-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0 15px;
+        }
+        .symbol-circle {
+            width: 48px;
+            height: 48px;
+            border: 1.5px solid var(--text);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            text-decoration: none;
+            color: var(--text);
+        }
+        .symbol-circle:hover { background: var(--text); color: var(--white); }
+        .symbol-circle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+        .id-header { font-family: 'Playfair Display'; font-weight: 700; letter-spacing: 4px; font-size: 0.85rem; text-align: center; margin-bottom: 25px; }
+        .id-footer { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.4em; text-align: center; color: #ccc; border-top: 1px solid #f9f9f9; padding-top: 20px; }
+
+        /* Boutique Protocol (Back) */
+        .how-to-buy { font-family: 'Playfair Display', serif; text-align: center; }
+        .how-to-buy h3 { font-size: 1rem; color: var(--accent); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 3px; font-weight: 400; }
+        .how-to-buy p { font-size: 0.75rem; line-height: 1.7; opacity: 0.9; font-weight: 300; margin-bottom: 10px; }
+        .protocol-tags { font-size: 0.55rem; letter-spacing: 2px; color: var(--accent); margin-top: 15px; font-weight: 600; }
+
+        /* --- MAGICAL BRAND REVEAL --- */
+        .brand-reveal-container {
+            width: 100%;
+            margin-top: 50px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .brand-reveal-container.visible { opacity: 1; transform: translateY(0); }
+
+        .brand-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 380px;
+            margin: 0 auto;
+        }
+        .brand-list span {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #777;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 140px;
+            text-align: center;
+            font-size: 0.6rem;
+            color: #777;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .arrow { font-weight: 300; font-size: 1.4rem; color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">Pixie's Pantry</h1>
+        <div class="tagline">Bespoke Distribution • Wholesale Floor Access</div>
+    </header>
+
+    <div class="container">
+        
+        <a href="https://discord.gg/pyTSf569" class="discord-hero">
+            <h2>The Discord Room</h2>
+            <p>Member Protocols • Exclusive Drops • Updates</p>
+        </a>
+
+        <div class="section-label">Boutique Direct</div>
+        
+        <a href="https://pixies-pantry.com/" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Instant Fulfillment</span>
+                <span class="link-desc">Manufacturer Direct Service</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <div class="boutique-promise">
+            A bespoke boutique experience.<br>
+            <strong>Wholesale-floor pricing.</strong> Full warranties.
+        </div>
+
+        <div class="section-label">Inventory Systems</div>
+
+        <a href="https://vapes.pixiespantryshop.com/" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Hardware Directory</span>
+                <span class="link-desc">Explore 1,000+ Premium Technical Items</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="https://vapes.pixiespantryshop.com/brands" class="link-card">
+            <div class="link-content">
+                <span class="link-title">The Brands</span>
+                <span class="link-desc">Authorized Partners Only</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <div class="section-label">Concierge</div>
+        
+        <a href="https://shop.pixiespantryshop.com" class="link-card">
+            <div class="link-content">
+                <span class="link-title">Apparel & Goods</span>
+                <span class="link-desc">The Skeleton Collection</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="mailto:admin@pixies-pantry.com" class="link-card" style="border-bottom: none;">
+            <div class="link-content">
+                <span class="link-title">Curator Inquiries</span>
+                <span class="link-desc">Direct Line for Private Orders</span>
+            </div>
+            <span class="arrow">→</span>
+        </a>
+
+        <!-- SIGNATURE ID CARD SCENE -->
+        <div class="id-card-scene">
+            <div class="id-card" id="idCard">
+                
+                <!-- FRONT: THE HUB KEYS -->
+                <div class="id-card-face id-card-front">
+                    <div class="id-header">MYNODE BOUTIQUE ID</div>
+
+                    <div class="id-icons">
+                        <!-- Glove Symbol (Vapes Hub) -->
+                        <a href="https://vapes.pixiespantryshop.com/" class="symbol-circle" title="Vapes Hub" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 11c1 0 2 1 2 2s-1 2-2 2-2-1-2-2 1-2 2-2z" stroke-width="1.2"/>
+                                <path d="M10 11V9c0-1.1.9-2 2-2s2 .9 2 2v2" stroke-width="1.2"/>
+                            </svg>
+                        </a>
+                        <!-- Sparkle Symbol (Boutique Shop) -->
+                        <a href="https://pixies-pantry.com/" class="symbol-circle" title="Instant Shop" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 7l.8 2.5 2.5.8-2.5.8-.8 2.5-.8-2.5-2.5-.8 2.5-.8z" fill="currentColor" stroke="none"/>
+                                <path d="M16 14l.4 1.2 1.2.4-1.2.4-.4 1.2-.4-1.2-1.2-.4 1.2-.4z" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </a>
+                        <!-- Info Symbol (FAQ) -->
+                        <a href="https://vapes.pixiespantryshop.com/faq" class="symbol-circle" title="FAQ" onclick="event.stopPropagation()">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="16" x2="12" y2="12" stroke-width="2"/>
+                                <line x1="12" y1="8" x2="12" y2="8" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <!-- Share Symbol (Link Share) -->
+                        <a href="javascript:void(0)" class="symbol-circle" title="Share" onclick="event.stopPropagation(); navigator.share({url: window.location.href})">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+                                <line x1="12" y1="12" x2="16" y2="8" stroke-width="1.2"/>
+                                <line x1="12" y1="12" x2="16" y2="16" stroke-width="1.2"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="id-footer">PROTOCOL AUTHENTICATED</div>
+                </div>
+
+                <!-- BACK: THE PROTOCOL -->
+                <div class="id-card-face id-card-back">
+                    <div class="how-to-buy">
+                        <h3>Boutique Protocol</h3>
+                        <p>
+                            Direct procurement at wholesale-floor pricing. Contact the Curator via <strong>admin@pixies-pantry.com</strong> for custom quotes.
+                        </p>
+                        <p>
+                            Full manufacturer warranties are valid on all boutique-sourced hardware.
+                        </p>
+                        <div class="protocol-tags">ANONYMOUS SHIPPING • DISCREET BILLING</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MAGICAL BRAND REVEAL UNDER CARD -->
+        <div class="brand-reveal-container" id="brandReveal">
+            <div style="font-size: 0.5rem; letter-spacing: 5px; color: var(--accent); margin-bottom: 30px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">AUTHORIZED HARDWARE PARTNERS</div>
+            <div class="brand-list">
+                <span>DaVinci</span> <span>Dr. Dabber</span> <span>AirVape</span>
+                <span>The Kind Pen</span> <span>Hamilton Devices</span> <span>Pax</span>
+                <span>Storz & Bickel</span> <span>Puffco</span> <span>Grenco Science</span>
+                <span>Pulsar</span> <span>Eyce</span> <span>Blazy Susan</span>
+                <span>Santa Cruz Shredder</span> <span>Yocan</span> <span>Focus V</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        Verified Boutique Distributor • 2026
+    </footer>
+
+    <script>
+        const idCard = document.getElementById('idCard');
+        const brandReveal = document.getElementById('brandReveal');
+
+        idCard.addEventListener('click', () => {
+            idCard.classList.toggle('is-flipped');
+            if(idCard.classList.contains('is-flipped')) {
+                brandReveal.classList.add('visible');
+            } else {
+                brandReveal.classList.remove('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>
